@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import java.util.ArrayList?>
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fx:id="imgPaneUp" fitHeight="225.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" />
+
+        <Pane fx:id="paneInside" layoutY="225.0" prefHeight="225.0" prefWidth="700.0">
+            <children>
+            <ImageView fx:id="imgPaneDownInside" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="dzien1" layoutX="40.714" layoutY="60.0" text="Label" />
+                <Label fx:id="dzien2" layoutX="137.142" layoutY="60.0" text="Label" />
+                <Label fx:id="dzien3" layoutX="233.57" layoutY="60.0" text="Label" />
+                <Label fx:id="dzien4" layoutX="329.998" layoutY="60.0" text="Label" />
+                <Label fx:id="dzien5" layoutX="426.426" layoutY="60.0" text="Label" />
+                <Label fx:id="dzien6" layoutX="522.854" layoutY="60.0" text="Label" />
+                <Label fx:id="dzien7" layoutX="619.282" layoutY="60.0" text="Label" />
+                <ImageView fx:id="img11" fitHeight="71.428" fitWidth="71.428" layoutX="25.0" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img12" fitHeight="71.428" fitWidth="71.428" layoutX="121.428" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img13" fitHeight="71.428" fitWidth="71.428" layoutX="217.856" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img14" fitHeight="71.428" fitWidth="71.428" layoutX="314.284" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img15" fitHeight="71.428" fitWidth="71.428" layoutX="410.712" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img16" fitHeight="71.428" fitWidth="71.428" layoutX="507.14" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img17" fitHeight="71.428" fitWidth="71.428" layoutX="603.568" layoutY="76.8" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp11" layoutX="50.714" layoutY="150.0" text="Label" />
+                <Label fx:id="temp12" layoutX="147.142" layoutY="150.0" text="Label" />
+                <Label fx:id="temp13" layoutX="243.57" layoutY="150.0" text="Label" />
+                <Label fx:id="temp14" layoutX="339.998" layoutY="150.0" text="Label" />
+                <Label fx:id="temp15" layoutX="436.426" layoutY="150.0" text="Label" />
+                <Label fx:id="temp16" layoutX="532.854" layoutY="150.0" text="Label" />
+                <Label fx:id="temp17" layoutX="629.282" layoutY="150.0" text="Label" />
+            </children>
+        </Pane>
+
+        <Pane fx:id="paneDown" layoutX="1.0" layoutY="246.0" prefHeight="204.0" prefWidth="700.0">
+            <children>
+            <ImageView fx:id="imgPaneDown" layoutX="-1.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="imgToday" fitHeight="80.0" fitWidth="80.0" layoutX="15.0" layoutY="50.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img1" fitHeight="45.0" fitWidth="45.0" layoutX="335.0" layoutY="63.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img2" fitHeight="45.0" fitWidth="45.0" layoutX="390.0" layoutY="63.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img3" fitHeight="45.0" fitWidth="45.0" layoutX="445.0" layoutY="63.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img4" fitHeight="45.0" fitWidth="45.0" layoutX="500.0" layoutY="63.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img5" fitHeight="45.0" fitWidth="45.0" layoutX="555.0" layoutY="63.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img6" fitHeight="45.0" fitWidth="45.0" layoutX="610.0" layoutY="63.0" onMouseClicked="#sthClicked" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp" layoutX="105.0" layoutY="84.0" text="temp celc/odcz.">
+               <font>
+                  <Font name="Lato Regular" size="20.0" />
+               </font></Label>
+                <Label fx:id="cisnienie" layoutX="146.0" layoutY="136.0" text="Atmospheric pressure" />
+                <Label fx:id="wilgoc" layoutX="147.0" layoutY="171.0" text="Humidity" />
+                <Label fx:id="predkoscWiatru" layoutX="145.0" layoutY="118.0" text="Wind speed" />
+                <Label fx:id="krotkiOpis" layoutX="105.0" layoutY="44.0" text="Short description" />
+                <Label fx:id="szansaNaOpad" layoutX="147.0" layoutY="154.0" prefHeight="17.0" prefWidth="90.0" text="Liquid precipitation rate/Snowfall" />
+                <Label fx:id="godzina" layoutX="106.0" layoutY="61.0" prefHeight="17.0" prefWidth="73.0" text="godzina" />
+                <Label fx:id="temp1" layoutX="344.0" layoutY="118.0" text="Label" />
+                <Label fx:id="temp2" layoutX="399.0" layoutY="118.0" text="Label" />
+                <Label fx:id="temp3" layoutX="454.0" layoutY="118.0" text="Label" />
+                <Label fx:id="temp4" layoutX="509.0" layoutY="118.0" text="Label" />
+                <Label fx:id="temp5" layoutX="564.0" layoutY="118.0" text="Label" />
+                <Label fx:id="temp6" layoutX="619.0" layoutY="118.0" text="Label" />
+                <Label fx:id="godz1" layoutX="344.0" layoutY="163.0" text="Label" />
+                <Label fx:id="godz2" layoutX="399.0" layoutY="163.0" text="Label" />
+                <Label fx:id="godz3" layoutX="454.0" layoutY="163.0" text="Label" />
+                <Label fx:id="godz4" layoutX="509.0" layoutY="163.0" text="Label" />
+                <Label fx:id="godz5" layoutX="564.0" layoutY="163.0" text="Label" />
+                <Label fx:id="godz6" layoutX="619.0" layoutY="163.0" text="Label" />
+            <Label layoutX="77.0" layoutY="171.0" text="Wilgotność:" />
+            <Label layoutX="55.0" layoutY="155.0" text="Szansa opadów:" />
+            <Label layoutX="90.0" layoutY="137.0" text="Ciśnienie:" />
+            <Label layoutX="108.0" layoutY="118.0" text="Wiatr:" />
+            </children>
+        </Pane>
+        <Button fx:id="close" layoutX="648.0" mnemonicParsing="false" onAction="#close" text="X" textAlignment="CENTER" textFill="#000000" textOverrun="CLIP">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+
+      <Label fx:id="cityName" layoutX="34.0" layoutY="189.0" prefHeight="17.0" prefWidth="106.0" text="miasto i znaczek lokalizacji ">
+          <font>
+              <Font name="Lato Regular" size="20.0" />
+          </font></Label>
+          <Label fx:id="pogoda7Dni" layoutX="124.0" layoutY="226.0" onMouseClicked="#sthClicked" prefHeight="30.0" prefWidth="90.0" text="Pogoda na 7 dni" textAlignment="CENTER" />
+          <Label fx:id="pogodaDzisiaj" layoutX="8.0" layoutY="225.0" onMouseClicked="#sthClicked" prefHeight="30.0" prefWidth="90.0" text="  Pogoda dzisiaj" />
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="40.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@/pics/gpsPin.png" />
+          </image>
+      </ImageView>
+    </children>
+
+    <fx:define>
+        <ArrayList fx:id="images">
+            <fx:reference source="img1" />
+            <fx:reference source="img2" />
+            <fx:reference source="img3" />
+            <fx:reference source="img4" />
+            <fx:reference source="img5" />
+            <fx:reference source="img6" />
+        </ArrayList>
+
+        <ArrayList fx:id="tempHourly">
+            <fx:reference source="temp1" />
+            <fx:reference source="temp2" />
+            <fx:reference source="temp3" />
+            <fx:reference source="temp4" />
+            <fx:reference source="temp5" />
+            <fx:reference source="temp6" />
+        </ArrayList>
+
+        <ArrayList fx:id="godzHourly">
+            <fx:reference source="godz1" />
+            <fx:reference source="godz2" />
+            <fx:reference source="godz3" />
+            <fx:reference source="godz4" />
+            <fx:reference source="godz5" />
+            <fx:reference source="godz6" />
+        </ArrayList>
+
+        <ArrayList fx:id="imagesDays">
+            <fx:reference source="img11" />
+            <fx:reference source="img12" />
+            <fx:reference source="img13" />
+            <fx:reference source="img14" />
+            <fx:reference source="img15" />
+            <fx:reference source="img16" />
+            <fx:reference source="img17" />
+        </ArrayList>
+
+        <ArrayList fx:id="days">
+            <fx:reference source="dzien1" />
+            <fx:reference source="dzien2" />
+            <fx:reference source="dzien3" />
+            <fx:reference source="dzien4" />
+            <fx:reference source="dzien5" />
+            <fx:reference source="dzien6" />
+            <fx:reference source="dzien7" />
+        </ArrayList>
+
+        <ArrayList fx:id="tempDays">
+            <fx:reference source="temp11" />
+            <fx:reference source="temp12" />
+            <fx:reference source="temp13" />
+            <fx:reference source="temp14" />
+            <fx:reference source="temp15" />
+            <fx:reference source="temp16" />
+            <fx:reference source="temp17" />
+        </ArrayList>
+
+    </fx:define>
+</Pane>

@@ -1,0 +1,31 @@
+.root{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+#pane{
+    -fx-background-color: gray;
+}
+
+.label{
+    -fx-text-fill : white;
+    -fx-text-size:10px;
+//    -fx-setAlignment: center;
+}
+
+#pogodaDzisiaj{
+    -fx-background-color: #7c9293;
+}
+
+#pogoda7Dni{
+    -fx-background-color: #7c9293;
+}
+
+#jakoscPowietrza{
+    -fx-background-color: #7c9293;
+}
+#close{
+    -fx-background-color: transparent;
+}
+#jakoscPowietrza{    -fx-background-color: transparent;}
+#pogoda7Dni{    -fx-background-color: transparent;}
+#pogodaDzisiaj{    -fx-background-color: transparent;}
